@@ -6,21 +6,22 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-12">
+    <section className="grid grid-cols-1 sm:grid-cols-12 mt-12 md:mt-20">
       <div className="col-span-7 place-self-center">
-        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+        <h1 className="text-white md:mb-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to bg-pink-600">
-            Hello I'm{" "}
+            Hi, I'm Lawrence
           </span>
           <br />
-
+        </h1>
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to bg-pink-600 text-lg md:text-2xl mb-4 font-bold">
           <TypeAnimation
-            sequence={["John Lawrence", 1000, "a Full-stack Developer", 1000]}
+            sequence={["I'm a Full-stack Developer.", 2000, "I'm a Sound Engineer.", 2000]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
           />
-        </h1>
+        </p>
         <p className="text-[#adb7be] mb-6 text-base sm:text-lg lg:text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto tempore soluta, itaque totam magni
           provident voluptas labore id perferendis quasi aut sit culpa quia.
