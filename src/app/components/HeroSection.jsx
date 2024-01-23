@@ -10,13 +10,20 @@ const HeroSection = () => {
       <div className="col-span-7 place-self-center">
         <h1 className="text-white md:mb-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to bg-pink-600">
-            Hi, I'm Lawrence
+            Hello, I'm Lawrence
           </span>
           <br />
         </h1>
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to bg-pink-600 text-lg md:text-2xl mb-4 font-bold">
+        <p className="text-white text-lg md:text-2xl mb-4 font-bold">
           <TypeAnimation
-            sequence={["I'm a Full-stack Developer.", 2000, "I'm a Sound Engineer.", 2000]}
+            sequence={[
+              "I'm a Full-stack Developer.",
+              2000,
+              "I'm a Shopify Developer",
+              2000,
+              "I'm also a Sound Engineer.",
+              2000,
+            ]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
