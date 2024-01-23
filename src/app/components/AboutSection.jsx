@@ -2,23 +2,21 @@
 import Image from "next/image";
 import React, { useState, useTransition } from "react";
 import TabButton from "./TabButton";
+import { iconData } from "../utils/iconData";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>TailwindCSS</li>
-        <li>ReactJS</li>
-        <li>NextJS</li>
-        <li>NodeJS</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-      </ul>
+      <div className="flex flex-row flex-wrap justify-center">
+        {iconData.map((icon, index) => (
+          <div className="flex flex-col justify-center items-center w-1/4 mb-4" key={index}>
+            <Image src={icon.image} alt={icon.title} width={50} height={50} />
+            <h5 className="text-sm text-white">{icon.title}</h5>
+          </div>
+        ))}
+      </div>
     ),
   },
   {
