@@ -19,7 +19,7 @@ const HeroSection = () => {
             sequence={[
               "I'm a Full-stack Developer.",
               2000,
-              "I'm a Shopify Developer",
+              "I'm a Shopify Developer.",
               2000,
               "I'm also a Sound Engineer.",
               2000,
