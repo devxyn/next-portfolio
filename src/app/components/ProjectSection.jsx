@@ -1,5 +1,7 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
+import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
@@ -26,19 +28,30 @@ const projectsData = [
 ];
 
 const ProjectSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
     <section id="projects" className="md:pt-40">
       <h2>My Projects</h2>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-10">
-        {projectsData.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgUrl={project.image}
-          />
+      <ul ref={ref} className="flex flex-col md:flex-row gap-4 md:gap-10">
+        {projectsData.map((project, index) => (
+          <motion.li
+            className="w-full"
+            key={index}
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 0.3, delay: (index + 1) * 0.4 }}>
+            <ProjectCard title={project.title} description={project.description} imgUrl={project.image} />
+          </motion.li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

@@ -13,7 +13,7 @@ const TAB_DATA = [
         {iconData.map((icon, index) => (
           <div className="flex flex-col justify-center items-center w-1/4 md:w-1/5 mb-4" key={index}>
             <Image src={icon.image} alt={icon.title} width={50} height={50} />
-            <h5 className="text-sm text-white">{icon.title}</h5>
+            <h5 className="text-sm text-white text-center">{icon.title}</h5>
           </div>
         ))}
       </div>
