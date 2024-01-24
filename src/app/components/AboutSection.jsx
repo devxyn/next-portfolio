@@ -11,7 +11,7 @@ const TAB_DATA = [
     content: (
       <div className="flex flex-row flex-wrap justify-center">
         {iconData.map((icon, index) => (
-          <div className="flex flex-col justify-center items-center w-1/4 mb-4" key={index}>
+          <div className="flex flex-col justify-center items-center w-1/4 md:w-1/5 mb-4" key={index}>
             <Image src={icon.image} alt={icon.title} width={50} height={50} />
             <h5 className="text-sm text-white">{icon.title}</h5>
           </div>
@@ -51,19 +51,24 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section id="about" className="text-white md:pt-10 md:mb-2">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16">
-        <Image src="/images/about-image.png" alt="about-image" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, itaque! Quidem libero laborum aspernatur
-            voluptas tenetur veniam necessitatibus laudantium commodi quisquam debitis voluptate.
+            Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Quam, itaque! Quidem libero laborum aspernatur
+            voluptas tenetur veniam necessitatibus laudantium commodi quisquam debitis voluptate. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Quam, itaque! Quidem libero laborum aspernatur voluptas tenetur veniam
+            necessitatibus laudantium commodi quisquam debitis voluptate. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quam, itaque! Quidem libero laborum aspernatur voluptas tenetur veniam necessitatibus
+            laudantium commodi quisquam debitis voluptate.
           </p>
+        </div>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
               {" "}
-              Skills{" "}
+              Tech Skills{" "}
             </TabButton>
             <TabButton selectTab={() => handleTabChange("experience")} active={tab === "experience"}>
               {" "}

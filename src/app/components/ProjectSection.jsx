@@ -27,9 +27,9 @@ const projectsData = [
 
 const ProjectSection = () => {
   return (
-    <>
+    <section id="projects" className="md:pt-40">
       <h2>My Projects</h2>
-      <div>
+      <div className="flex flex-col md:flex-row gap-4 md:gap-10">
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}
@@ -39,7 +39,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

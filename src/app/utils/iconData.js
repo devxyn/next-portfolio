@@ -8,4 +8,5 @@ export const iconData = [
   { title: "NodeJS", image: "/images/icons/node.svg" },
   { title: "ExpressJS", image: "/images/icons/express.svg" },
   { title: "Mongo DB", image: "/images/icons/mongodb.svg" },
+  { title: "Firebase", image: "/images/icons/firebase.svg" },
 ];
