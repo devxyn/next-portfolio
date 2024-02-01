@@ -10,3 +10,16 @@ export const iconData = [
   { title: "Mongo DB", image: "/images/icons/mongodb.svg" },
   { title: "Firebase", image: "/images/icons/firebase.svg" },
 ];
+
+export const experienceData = [
+  {
+    title: "Shopify Developer",
+    company: "Nordic Quality",
+    date: "Jul 2022 - Mar 2023",
+  },
+  {
+    title: "Full-stack Web Developer Intern",
+    company: "Uplift Code Camp",
+    date: "Aug 2023 - Mar 2024",
+  },
+];
