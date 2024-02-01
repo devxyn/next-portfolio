@@ -6,23 +6,47 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Website 1",
-    description: "Description 1",
-    image: "/images/projects/1.png",
+    title: "Medyo Netflix",
+    description: "Description",
+    image: "/images/projects/medyonetflix.png",
+    previewUrl: "https://medyonetflix.vercel.app/",
+    gitUrl: "https://github.com/devxyn/medyonetflix",
     tag: ["All", "Web"],
   },
   {
     id: 2,
-    title: "React Website 2",
-    description: "Description 2",
-    image: "/images/projects/1.png",
+    title: "Medyo Pkmn",
+    description: "Description",
+    image: "/images/projects/medyopokemon.png",
+    previewUrl: "https://medyopokemon.netlify.app/",
+    gitUrl: "https://github.com/devxyn/medyopkmn",
     tag: ["All", "Web"],
   },
   {
     id: 3,
-    title: "React Website 3",
-    description: "Description 3",
-    image: "/images/projects/1.png",
+    title: "Jammming",
+    description: "Description",
+    image: "/images/projects/jammming.png",
+    previewUrl: "https://devxyn-jammming.netlify.app/",
+    gitUrl: "https://github.com/devxyn/jammming",
+    tag: ["All", "Web"],
+  },
+  {
+    id: 4,
+    title: "Pokedex",
+    description: "Description",
+    image: "/images/projects/pokedex.png",
+    previewUrl: "https://devxyn-pokedex.vercel.app/",
+    gitUrl: "https://github.com/devxyn/pokedex",
+    tag: ["All", "Web"],
+  },
+  {
+    id: 5,
+    title: "Weather App",
+    description: "Description",
+    image: "/images/projects/weatherapp.png",
+    previewUrl: "https://devxyn-weatherapp.vercel.app/",
+    gitUrl: "https://github.com/devxyn/weatherapp",
     tag: ["All", "Web"],
   },
 ];
@@ -38,17 +62,22 @@ const ProjectSection = () => {
 
   return (
     <section id="projects" className="md:pt-40">
-      <h2>My Projects</h2>
-      <ul ref={ref} className="flex flex-col md:flex-row gap-4 md:gap-10">
+      <h2 className="text-4xl font-bold mb-4 text-white">My Projects</h2>
+      <ul ref={ref} className="flex flex-col md:flex-row md:flex-wrap w-full gap-4 justify-center items-center">
         {projectsData.map((project, index) => (
           <motion.li
-            className="w-full"
+            className="w-full md:w-[30%]"
             key={index}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: (index + 1) * 0.4 }}>
-            <ProjectCard title={project.title} description={project.description} imgUrl={project.image} />
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              imgUrl={project.image}
+              gitUrl={project.gitUrl}
+            />
           </motion.li>
         ))}
       </ul>

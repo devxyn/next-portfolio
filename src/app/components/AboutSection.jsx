@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState, useTransition } from "react";
 import TabButton from "./TabButton";
-import { iconData } from "../utils/iconData";
+import { experienceData, iconData } from "../utils/aboutSectionData";
 
 const TAB_DATA = [
   {
@@ -13,7 +13,7 @@ const TAB_DATA = [
         {iconData.map((icon, index) => (
           <div className="flex flex-col justify-center items-center w-1/4 md:w-1/5 mb-4" key={index}>
             <Image src={icon.image} alt={icon.title} width={50} height={50} />
-            <h5 className="text-sm text-white text-center">{icon.title}</h5>
+            <h5 className="text-sm font-semibold text-white text-center">{icon.title}</h5>
           </div>
         ))}
       </div>
@@ -24,18 +24,14 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul>
-        <li>
-          <h3>
-            Shopify Developer - <span>Nordic Quality</span>
-          </h3>
-          <p>Jul 2022 - Mar 2023</p>
-        </li>
-        <li>
-          <h3>
-            Uplift Code Camp - <span>Fullstack Developer Intern</span>
-          </h3>
-          <p>Aug 2023 - Mar 2024</p>
-        </li>
+        {experienceData.map((exp, index) => (
+          <li key={index} className="mb-2">
+            <h5 className="text-lg text-[#ADB7BE]">
+              <span className="font-bold text-white">{exp.title}</span> | {exp.company}
+            </h5>
+            <p className="text-sm text-white">{exp.date}</p>
+          </li>
+        ))}
       </ul>
     ),
   },
