@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Image from "next/image";
 import React, { useState, useTransition } from "react";
@@ -51,13 +52,13 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16">
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base md:text-lg ">
-            Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Quam, itaque! Quidem libero laborum aspernatur
-            voluptas tenetur veniam necessitatibus laudantium commodi quisquam debitis voluptate. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Quam, itaque! Quidem libero laborum aspernatur voluptas tenetur veniam
-            necessitatibus laudantium commodi quisquam debitis voluptate. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quam, itaque! Quidem libero laborum aspernatur voluptas tenetur veniam necessitatibus
-            laudantium commodi quisquam debitis voluptate.
+          <p className="text-base md:text-lg text-[#ADB7BE] leading-tight">
+            Hello, I'm John Lawrence Hermo, a <span className="font-bold">self-taught front-end developer</span>{" "}
+            currently expanding my skills through a recent full-stack bootcamp. Proficient in{" "}
+            <span className="font-bold">React</span> and <span className="font-bold">JavaScript</span>, my focus lies in
+            <span className="font-bold"> problem-solving and crafting clean, user-friendly interfaces</span>. I'm eager
+            to contribute my growing expertise to meaningful projects and collaborate with industry professionals. Let's
+            connect and create something impactful!
           </p>
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
