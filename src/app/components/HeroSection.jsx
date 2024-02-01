@@ -19,24 +19,22 @@ const HeroSection = () => {
           </span>
           <br />
         </h1>
-        <p className="text-white text-3xl md:text-4xl mb-4 font-bold">
+        <p className="text-white text-3xl mb-4 font-bold">
           <TypeAnimation
             sequence={[
               "I'm a Full-stack Developer.",
               2000,
-              "I'm a Shopify Developer.",
-              2000,
-              "I'm also a Sound Engineer.",
-              2000,
+              "I am passionate about crafting user-friendly experiences.",
+              1000,
+              "I am an enthusiastic problem solver.",
+              1000,
+              "I'm also a Shopify Developer and a Sound Engineer.",
+              1000,
             ]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
           />
-        </p>
-        <p className="text-[#adb7be] mb-6 text-base sm:text-lg lg:text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto tempore soluta, itaque totam magni
-          provident voluptas labore id perferendis quasi aut sit culpa quia.
         </p>
         <div>
           <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
