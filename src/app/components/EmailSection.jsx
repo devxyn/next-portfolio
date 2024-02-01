@@ -40,19 +40,13 @@ const EmailSection = () => {
   return (
     <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-40 w-40  md:h-80 md:w-80 z-0 blur-lg absolute top-24 md:top-3/4 -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur consequuntur corporis delectus
-          doloribus doloremque eos, expedita facere fugiat fugit harum ipsam laboriosam maiores mollitia nobis, nobis
-          odit quaerat quasi quidem quos repellat repudiandae, sapiente sunt tempore tempora tenetur unde voluptatum.
-        </p>
+      <div className="flex flex-col justify-center z-10">
+        <h5 className="text-5xl font-bold text-white my-2">Let's Connect</h5>
         <div className="socials flex flex-row gap-2">
-          <Link href="www.github.com/devxyn">
+          <Link target="_blank" href="https://github.com/devxyn">
             <Image src={GithubIcon} alt="github-icon" height={50} width={50} />
           </Link>
-          <Link href="www.linkedin.com/in/johnlawrencehermo">
+          <Link target="_blank" href="https://www.linkedin.com/in/johnlawrencehermo">
             <Image src={LinkedInIcon} alt="linkedin-icon" height={50} width={50} />
           </Link>
         </div>
