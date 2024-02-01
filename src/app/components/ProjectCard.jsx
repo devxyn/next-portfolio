@@ -14,7 +14,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}>
-        <Link href={gitUrl} className="cursor-pointer">
+        <Link href={gitUrl} target="_blank" className="cursor-pointer">
           <Image
             className="absolute top-2 right-3 bg-black/50 rounded-full"
             src="/github-icon.svg"
@@ -25,7 +25,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         </Link>
       </div>
       <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 relative">
-        <Link href={previewUrl} className="cursor-pointer">
+        <Link target="_blank" href={previewUrl} className="cursor-pointer">
           <LinkIcon className="absolute top-2 right-3 h-10 border border-white p-1 rounded-full hover:bg-white/80 hover:text-black" />
         </Link>
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
