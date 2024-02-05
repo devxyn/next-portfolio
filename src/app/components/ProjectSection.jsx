@@ -7,7 +7,7 @@ const projectsData = [
   {
     id: 1,
     title: "Medyo Netflix",
-    description: "Description",
+    description: "A netflix clone integrated with TMDB API.",
     image: "/images/projects/medyonetflix.png",
     previewUrl: "https://medyonetflix.vercel.app/",
     gitUrl: "https://github.com/devxyn/medyonetflix",
@@ -16,7 +16,7 @@ const projectsData = [
   {
     id: 2,
     title: "Medyo Pkmn",
-    description: "Description",
+    description: "A javascript game inspired from Pokemon",
     image: "/images/projects/medyopokemon.png",
     previewUrl: "https://medyopokemon.netlify.app/",
     gitUrl: "https://github.com/devxyn/medyopkmn",
@@ -25,7 +25,7 @@ const projectsData = [
   {
     id: 3,
     title: "Jammming",
-    description: "Description",
+    description: "A web app integrated with Spotify API",
     image: "/images/projects/jammming.png",
     previewUrl: "https://devxyn-jammming.netlify.app/",
     gitUrl: "https://github.com/devxyn/jammming",
@@ -34,7 +34,7 @@ const projectsData = [
   {
     id: 4,
     title: "Pokedex",
-    description: "Description",
+    description: "A web app integrated with PokeAPI",
     image: "/images/projects/pokedex.png",
     previewUrl: "https://devxyn-pokedex.vercel.app/",
     gitUrl: "https://github.com/devxyn/pokedex",
@@ -43,7 +43,7 @@ const projectsData = [
   {
     id: 5,
     title: "Weather App",
-    description: "Description",
+    description: "A web app integrated with Open Weather API",
     image: "/images/projects/weatherapp.png",
     previewUrl: "https://devxyn-weatherapp.vercel.app/",
     gitUrl: "https://github.com/devxyn/weatherapp",

@@ -29,7 +29,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           <LinkIcon className="absolute top-2 right-3 h-10 border border-white p-1 rounded-full hover:bg-white/80 hover:text-black" />
         </Link>
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        <p className="text-[#ADB7BE] text-sm">{description}</p>
       </div>
     </div>
   );
