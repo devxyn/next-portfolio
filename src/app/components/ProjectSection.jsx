@@ -49,6 +49,16 @@ const projectsData = [
     gitUrl: "https://github.com/devxyn/weatherapp",
     tag: ["All", "Web"],
   },
+  {
+    id: 6,
+    title: "Nordic Lifting",
+    description: "An ecommerce site",
+    image: "/images/projects/nordiclifting.png",
+    previewUrl: "https://nordiclifting.com/",
+    gitUrl: "",
+    disabled: true,
+    tag: ["All", "Web"],
+  },
 ];
 
 const ProjectSection = () => {
@@ -77,6 +87,7 @@ const ProjectSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
+              disabled={project.disabled}
               previewUrl={project.previewUrl}
             />
           </motion.li>
